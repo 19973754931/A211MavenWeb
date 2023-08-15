@@ -14,7 +14,7 @@ public class UserDao {
 
     public static void main(String[] args) {
 
-        int i=11;
+        int i=100;
         System.out.println("i"+i);
 
 
