@@ -18,6 +18,7 @@ public class UserDao {
         i=10-1;
 
         System.out.println("i的值是"+i);
+         System.out.println("12");
         System.out.println("12");
         // 1、 new Jedis 对象即可
         //Jedis jedis = new Jedis("192.168.13.130", 6379);
