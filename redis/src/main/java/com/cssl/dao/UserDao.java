@@ -14,8 +14,10 @@ public class UserDao {
 
     public static void main(String[] args) {
 
-        int i=100;
-        System.out.println("i"+i);
+        int i=0;
+        //减法运算
+        i=1000-1;
+        System.out.println("i的值是"+i);
 
 
 
