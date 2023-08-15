@@ -16,7 +16,9 @@ public class UserDao {
         int i=0;
         //减法运算
         i=10-1;
+
         System.out.println("i的值是"+i);
+        System.out.println("123432");
         // 1、 new Jedis 对象即可
         //Jedis jedis = new Jedis("192.168.13.130", 6379);
         Jedis jedis=new Jedis("192.168.254.129",6379);
