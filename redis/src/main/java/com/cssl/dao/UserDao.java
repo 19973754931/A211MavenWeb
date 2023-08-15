@@ -14,7 +14,12 @@ public class UserDao {
 
     public static void main(String[] args) {
 
-        System.out.println("hello!1");
+        int i=1;
+        System.out.println("i"+i);
+
+
+
+
         // 1、 new Jedis 对象即可
         //Jedis jedis = new Jedis("192.168.13.130", 6379);
         Jedis jedis=new Jedis("192.168.254.129",6379);
