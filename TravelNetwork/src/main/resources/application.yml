@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:///online_voting_system?serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  thymeleaf:
+    cache: false
+    encoding: utf-8
+
+  mvc:
+    static-path-pattern: /**
+  web:
+    resources:
+      static-locations: classpath:/templates/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+
+view:
+  prefix: /
+  suffix: .html
+
+mybatis:
+  type-aliases-package: com.cssl.pojo
+  configuration:
+    auto-mapping-behavior: full
+    use-generated-keys: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    call-setters-on-nulls: true #设置返回字段不为空，前端不报错
+
+
+pagehelper:
+  reasonable: true
+  page-size-zero: true
+

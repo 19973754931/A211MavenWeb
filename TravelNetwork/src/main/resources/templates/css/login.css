@@ -1,0 +1,169 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,select,textarea,p,blockquote,th,td,hr,button,figure,menu{margin:0;padding:0;}
+body{font-size:12px;line-height:22px;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+ol,ul{list-style:none;}
+a img{border:none; vertical-align:top;}
+a{ text-decoration:none;}a:hover{ text-decoration: underline;}
+i{ font-style:normal;}
+.clearfix:after{ content: "."; display: block;height: 0; clear: both; visibility: hidden;}
+.wrap, .header_inner, .topbar_box{ width:1000px;}
+/* 主体 */
+.fl{ float:left}
+.fr{ float:right}
+.login_top{ width:1000px; margin:0 auto; padding:20px 0 0; height:50px;}
+.lv_logo,.lv_logo a{ width:175px; height:57px; position:relative;}
+.lv_logo{ margin-top:-10px; float:left; background:url(../../../img/logo/v2/lv_logo.png) no-repeat;}
+.lv_logo a{ display:block;  text-indent:-999px; *background:url(about:blank);}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+    .lv_logo {
+        background: url(../../../img/logo/v2/lv_logo@2x.png) no-repeat 0 0;
+        background-size: contain;
+    }
+}
+
+.lv_logo_keywords{float:left;height:37px; line-height:37px; text-indent:10px; margin-left:10px; border-left:1px solid #CCCCCC; font-size:22px; color:#666666; font-weight:normal;
+    margin-top:10px;}
+
+.login-wrap{overflow:hidden !important; width:100%; position:relative;}
+.login-main-box{  width:100%; height:520px; position:absolute; top:50%; margin-top:-260px; z-index:3; left:50%; margin-left:-960px;}
+.login-main-box .img-box{display:block; width:1920px;}
+.login-box{ width:350px;position:relative; left:50%; margin-left:145px; z-index:9;padding:30px 0;} 
+.user-box{height:370px; min-height:370px; padding-bottom:20px; height:auto !important; background:#fff;box-shadow:0px 0px 2px #a6a6a6;}
+.tab{ background:url(../../../img/login/v1/tab-bg.jpg) repeat-x; overflow:hidden; zoom:1;}
+.tab li{ float:left; font-size:16px;color:#666; height:46px; line-height:46px; text-align:center; width:175px; cursor:pointer;}
+.tab .left{background:url(../../../img/login/v1/active-bg.jpg) right 0 no-repeat;}
+.tab .right{background:url(../../../img/login/v1/active-bg.jpg) left 0 no-repeat;}
+.tab .active{ background:#fff; color:#333;}
+
+.content{ padding:30px 25px 0; display:none;}
+.content .ipt-box li{ margin:0 0 15px 0 ; position:relative;}
+.content .ipt-box .last{ margin:0;}
+.content .ipt-box .pswd{ margin:0 0 15px 0}
+.content .ipt-box .error{ border:1px solid #b82a63; background:#fef2f9;}
+.content .user-ipt{border:1px solid #aaa;box-shadow:1px 1px 1px #cecece inset;width:288px; line-height:38px; height:38px; vertical-align:middle;padding:0 0 0 10px;font-size:14px;color:#333;}
+.content .width{width:154px;}
+.content .name{ background:url(../../../img/login/v1/user-bg.png) no-repeat 12px 3px; padding:0 0 0 38px; height:22px;font-size:16px; color:#bababa;top:0; left:0; position:absolute; margin:10px 0 0;}
+.content .passwd{background:url(../../../img/login/v1/user-bg.png) no-repeat 12px -39px ; padding:0 0 0 38px;height:22px; font-size:16px; color:#bababa;top:0; left:0;position:absolute;margin:10px 0 0;}
+.content .dynamic{padding:0 0 0 12px;height:22px; font-size:12px; color:#bababa;top:0; left:0;position:absolute;margin:10px 0 0;}
+
+.content .code{border-radius: 2px; border:1px solid #ccc; color:#666; text-align:center; display:block; width:122px; height:38px; line-height:38px; font-size:14px; background:url(../../../img/login/v1/code-bg.jpg) repeat-x;}
+.content .code:hover{ text-decoration:none; background:#f5f5f5;}
+.content .time:hover{ text-decoration:none; }
+.content .time{ display:none; border:1px solid #ccc; color:#999; text-align:center;width:122px; height:38px; line-height:38px; font-size:14px; background:url(../../../img/login/v1/code-bg.jpg) repeat-x;}
+.content .time em{ color:#f60; margin:0 2px 0 0; font-style:normal;}
+.content .check-box{color:#666; font-size:14px;}
+.content .check{ vertical-align:middle; margin:0 5px 0 0;}
+.content .link{ color:#09c;font-size:14px;}
+.content .link:hover{ color:#f60; text-decoration:underline;}
+.content .loing-btn{display:block; background:#e38; border-radius:2px; height:42px; line-height:42px; color:#fff; text-align:center; font-size:18px;width:300px;}
+.content .loing-btn:hover{ background:#dd3377; text-decoration:none;}
+.content .lv-member{ margin:12px 0 0; color:#999; font-size:14px;line-height:18px;}
+.account-box{ /*margin:16px 0 0 25px;*/margin:16px 0 0 0; position:relative;}
+.ac-iphone{ margin:28px 0 0}
+.forget_pw{margin: -7px 0 15px 0;}
+.account-box h4{ border-bottom:1px solid #ddd; position:relative; height:14px; width:300px;}
+.account-box span{font-size:14px; color:#666;position:absolute; display:block; width:120px; background:#fff; top:4px;}
+.account-box .icon{ margin:22px 0 0; overflow:hidden;}
+.icon a{display:block; float:left; margin-right:12px; width:24px; height:24px;background:url(../../../img/login/v1/icon.png) no-repeat;}
+.icon a:hover{background:url(../../../img/login/v1/icon-hover.png) no-repeat;}
+.icon .qq{ background-position:0 0;}
+.icon .qq:hover{background-position:0 0;}
+.icon .weibo{ background-position:0 -31px;}
+.icon .weibo:hover{background-position:0 -31px;}
+.icon .baidu{ background-position:0 -65px;}
+.icon .baidu:hover{background-position:0 -65px;}
+.icon .sina{ background-position:0 -101px;}
+.icon .sina:hover{background-position:0 -101px;}
+.icon .alpay{ background-position:0 -132px;}
+.icon .alpay:hover{background-position:0 -132px;}
+.icon .kai{ background-position:0 -164px;}
+.icon .kai:hover{background-position:0 -164px;}
+.icon .sd{ background-position:0 -197px;}
+.icon .sd:hover{background-position:0 -197px;}
+.icon .six{ background-position:0 -229px;}
+.icon .six:hover{background-position:0 -229px;}
+.icon .weix{ background-position:0 -262px;}
+.icon .weix:hover{background-position:0 -262px;}
+.yanzhen{ display:none;}
+
+/*验证样式*/
+
+.validateErrorTip{ background:#fff; border:1px solid #ccc;position: absolute;box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1);padding:8px 15px 8px 10px;font-size: 12px;line-height: 1.5;z-index: 100;top:6px; right:345px; display:none;}
+.validate-error-arrowR{ right:8px;height: 14px;position: absolute;top:12px;}
+.validate-error-arrowR i{ color:#fff;}
+.validateContent{ font-size:14px;background:url(../../../img/login/v1/close.png) 0 center no-repeat; padding:0 0 0 22px; overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;}
+.validate-arrow i, .validate-arrow em, .validate-error-arrowR i, .validate-error-arrowR em, .validate-error-arrowB i, .validate-error-arrowB em{font-size: 14px;
+font-style: normal;font-weight: normal;line-height: 1;position: absolute;}
+.validate-error-arrowR em, .validate-error-arrowB em{ color:#ccc; left:2px;}
+
+/*****弹出层动画*******/
+.validateErrorTip{
+-webkit-animation:flipInX .6s .2s ease both;
+-moz-animation:flipInX .6s .2s ease both;}
+@-webkit-keyframes flipInX{
+0%, 100% {-webkit-transform: translateX(0);}  
+10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-3px);}  
+20%, 40%, 60%, 80% {-webkit-transform: translateX(3px);}  
+
+}
+@-moz-keyframes flipInX{
+0%, 100% {-webkit-transform: translateX(0);}  
+10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-3px);}  
+20%, 40%, 60%, 80% {-webkit-transform: translateX(3px);}  
+}
+
+/*更多账号登录*/
+.login_more{position:absolute;top: 38px;left: 150px;color:#999;font-size:14px;}
+.login_more em{margin:0 0 0 3px;}
+
+/*公告主体*/
+.noticeWarp{ background:#f5f5f5; width:100%; position:relative;overflow:hidden;margin: 25px 0 0;}
+.noticeBody{ width:1000px; margin:0 auto; padding:18px 0 40px;}
+.noticeTitle{ height:24px; line-height:24px;ont-size:24px; color:#333; font-weight:normal; text-align:center;}
+.noticeCotent{ background:#fff; border:1px solid #e3e3e3; padding:40px 50px; margin:20px 0 0;}
+.wordBody{ font-size:16px; color:#333; line-height:30px; text-indent:2em;}
+.phoneBind{ margin:35px 0 0; overflow:hidden;}
+.phoneTitle,.loginTitle{ font-size:18px; height:20px; line-height:20px; font-weight:normal; color:#999; margin:0 0 15px 0}
+.otherLogin{ margin:30px 0 0;}
+.loginTitle{ border-bottom:1px dotted #ccc; padding-bottom:12px;}
+.icon li{ float:left; color:#666; font-size:14px; margin-right:30px;}
+
+/*第三方登录*/
+.userTip{ height:80px; line-height:80px; background:#f9f9f9; border-top:1px solid #ccc; padding:0 0 0 100px; font-size:16px; color:#333;}
+.userTip em{ color:#999}
+.userTip .userHead{ width:27px; height:27px; display:inline-block;background:url(../../../img/login/v1/user-bg.png) no-repeat 0 -67px; margin-right:10px; vertical-align:middle}
+.bindBox{ margin:40px 0 0; overflow:hidden;}
+.bindBox .bindLi{ float:left; width:300px; height:340px;padding:12px 99px 30px; border-left:1px dotted #c6c6c6; margin-left:-1px;list-style: none; position:relative;}
+.bindContent{ display:block; padding:0;margin-top:50px;}
+.bindTitle{ border-bottom:1px solid #e3e3e3; position:relative;}
+.bindTitle h3{ font-size:18px;color:#333; background:#fff; padding:4px 12px; font-weight:normal; position:absolute; top:-14px;left: 50%; margin-left: -116px;}
+.bindPhoneTip{ font-size:14px; height:16px; line-height:16px;color:#999;}
+.bindPhoneTip a{ color:#09c}
+.bindPhoneTip a:hover{ color:#f60}
+.bindPhoneTip input{ vertical-align:middle; margin-right:4px;}
+.marT20{margin:20px 0 0;}
+.marB20{margin:10px 0 20px 0;}
+.textR{text-align:right}
+.bindErrorTip{display:none;position: absolute;left: 100px;top: 35px;color:#333; font-size:12px;}
+.bindErrorTip i{display:inline-block;background:url(../../../img/login/v1/user-bg.png) no-repeat 0 -100px; width:14px; height:14px; margin-right:4px; vertical-align:middle;}
+
+/*添加广告无角标功能 20161008  By Niuchen */
+.login-wrap::before {
+    display: block;
+    content: "";
+    width: 50px;
+    height: 18px;
+    background: url("../../../img/v6/lv_ads.png") no-repeat 0px 0px;
+    position: absolute;
+    top: 424px;
+    left: 50%;
+    z-index: 100;
+    margin-left: -500px;
+}

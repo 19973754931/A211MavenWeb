@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<title>驴妈妈登录</title>
+    <link rel="stylesheet" href="css/index.php">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/l_login.css">
+	<style type="text/css">
+		.app_right{background: none;}
+	</style>
+<link rel="stylesheet" href="css/jquery.common.css"><link rel="stylesheet" href="css/style_https.3.0.23.css"></head>
+
+<body>
+<!-- 头部-->
+<div class="login_top">
+			<h1 class="lv_logo"><a href="http://www.lvmama.com/">驴妈妈旅游网</a></h1>
+            <h2 class="lv_logo_keywords">登录中心</h2>
+			<span class="login_hotline">1010-6060</span>
+		</div>
+<!-- 头部结束-->
+
+<!-- 主体-->
+<div class="login-wrap" style="overflow: visible;">
+	<div class="login-box clearfix">
+    	<div class="user-box">
+        	<ul class="tab clearfix">
+            	<li class="left active">普通登录</li>
+                <li class="right">手机动态密码登录</li>
+            </ul>
+            <!-- 普通登录-->
+            <div class="content" style="display:block">
+            	<ul class="ipt-box clearfix">
+            		<form method="post" id="loginform" name="login_form" action="https://login.lvmama.com/nsso/login">
+						<input type="hidden" name="token" value="DMSGVEZJ18IWBMJ9I79MDY90VAWSSMS">
+
+	            		<li>
+	                    	<input type="text" value="" class="user-ipt" name="username" id="usernameOrNum">
+	                        <p id="userNameTips" class="name">邮箱/手机号/用户名/会员卡</p>
+	                        <!-- 报错-->
+	                        <div class="validateErrorTip" id="userNameOrPwdDiv">
+	                            <div class="validate-error-arrowR"><em>◆</em><i>◆</i></div>
+	                            <div class="validateContent" id="userNameOrPwd">请输入邮箱/手机号/用户名/会员卡</div>
+	                        </div>
+	                    	<!-- 报错结束-->
+	                       
+	                    </li>
+	                	<li class="pswd">
+	                    	<input type="password" value="" class="user-ipt" name="password" id="passwordNum">
+	                        <p id="passwdTips" class="passwd">请输入密码</p>
+	                        <!-- 报错-->
+	                        <div class="validateErrorTip">
+	                            <div class="validate-error-arrowR"><em>◆</em><i>◆</i></div>
+	                            <div class="validateContent">请输入密码</div>
+	                        </div>
+	                    	<!-- 报错结束-->
+	                     </li>
+                        
+						 <li id="_captcha" style="display: none;">
+                        
+							<a class="fr" href="#"><img id="image" src="css/checkcode.htm" width="104" height="40" ></a>
+							<span>
+								<input value="" name="verifycode" id="verifycode" class="user-ipt width">
+								<p class="dynamic">请填写计算结果或验证码</p>
+								<!-- 报错-->
+							<div class="validateErrorTip " id="errorCodeDiv">
+								<div class="validate-error-arrowR"><em>◆</em><i>◆</i></div>
+								<div class="validateContent" id="errorCode">请输入验证码或计算结果</div>
+							</div>
+							<!-- 报错结束-->
+							</span>
+						 </li>
+	                    <li class="forget_pw clearfix"><span class="check-box fl"><input name="remPassWord" type="checkbox" checked="" class="check" value="11">记住密码30天</span><a href="#" class="link fr">忘记密码？</a></li>
+	                    <li id="_loginButton" class="last">
+	                    	<a href="#" class="loing-btn" id="loginButton">登  录</a>
+	                    </li>
+	                    <input type="hidden" name="lt" value="LT-7854-Iqbbo5P1xYMy9GMymdzQ">
+                        <input type="hidden" name="service" id="serviceUrl" value="http://www.lvmama.com/?losc=100967＆tele=601＆cm_mmc=360A-_-cpc-_-sem-_-pc＆utm_source=360A＆utm_medium=sem＆utm_campaign=cpc＆fc=u236375852.c1573035198.g1204350607.k8249987607.a3970252336.pq">
+						<!-- 滑动验证 -->
+						<li id="_normalGeetestCaptcha" style="display: none;">
+							
+							<p id="normal-embed-captcha-wait" class="hide">正在加载验证码......</p>
+						</li>
+						<input type="hidden" id="normal_geetest_challenge" name="normal_geetest_challenge" value="">
+						<input type="hidden" id="normal_geetest_validate" name="normal_geetest_validate" value="">
+						<input type="hidden" id="normal_geetest_seccode" name="normal_geetest_seccode" value="">
+						<input type="hidden" id="securityCode" name="securityCode" value="">
+	            	</form>
+                </ul>
+                <p class="lv-member">还不是驴妈妈会员？<a href="https://login.lvmama.com/nsso/register/registering.do" class="link">免费注册</a></p>
+                 <!-- 合作网站账号登录-->
+				<div class="account-box">
+					<h4><span>合作网站账号登录</span></h4>
+					
+				</div>
+            <!-- 合作网站账号登录结束-->
+            </div>
+            <!-- 普通登录结束-->
+            <!-- 手机验证登录-->
+            <div class="content">
+            	<ul class="ipt-box clearfix">
+            		<form id="mobileLoginSumbit" action="https://login.lvmama.com/nsso/mobileLogin.do" method="post" name="mobileLogin_form">
+	            		<li>
+	                    	<input type="text" class="user-ipt" value="" name="mobile" id="mobileLoginText" onblur="mobileRegisterOnBlur(&#39;mobileLoginText&#39;,&#39;mobileLoinTextSuccessTip&#39;)">
+	                    	 <p class="name">手机号</p>
+	                         <!-- 报错-->
+	                        <div class="validateErrorTip" id="moblieErrorDiv">
+	                            <div class="validate-error-arrowR"><em>◆</em><i>◆</i></div>
+	                            <div class="validateContent" id="moblieError">请输入手机号</div>
+	                        </div>
+	                    	<!-- 报错结束-->
+	                    </li>
+						
+						<li id="_mobileCaptcha" style="display: none;">
+						
+							<a class="fr" href="#"><img id="imageMobile" src="css/checkcode.htm" width="104" height="40" onclick="refreshCheckCode(&#39;imageMobile&#39;);return false;"></a>
+		                    	<span>
+		                        	<input value="" name="verifycode" class="user-ipt width" id="mobileVerifyCode">
+		                    		<p class="dynamic">请填写计算结果或验证码</p>
+			                            <!-- 报错-->
+			                        <div class="validateErrorTip " id="errorMobileCodeDiv">
+										<div class="validate-error-arrowR"><em>◆</em><i>◆</i></div>
+										<div class="validateContent" id="errorMobileCode">请输入验证码或计算结果</div>
+									</div>
+			                    	<!-- 报错结束-->
+			                    	</span>
+
+							<!-- 报错结束-->
+							
+						</li>
+	                	<li class="clearfix">
+	                    	<span class="fl">
+	                        	<input type="text" id="mobileCode" value="" class="user-ipt width" name="authenticationCode">
+	                    		<p class="dynamic">请输入动态密码</p>
+	                            <!-- 报错-->
+	                        <div class="validateErrorTip" id="dynaPWdDiv">
+	                            <div class="validate-error-arrowR"><em>◆</em><i>◆</i></div>
+	                            <div class="validateContent" id="dynaPWd">请输入动态密码</div>
+	                        </div>
+	                    	<!-- 报错结束-->
+	                    	</span>
+	                        <a class="code fr" href="javascript:void(0)">获取动态密码</a><a class="time fr" href="javascript:void(0)"><em id="countdown">60</em>秒后重发</a>
+	                        
+	                    </li>
+
+						<input type="hidden" name="lt" value="LT-7854-Iqbbo5P1xYMy9GMymdzQ">
+	                    <input type="hidden" name="service" value="http://www.lvmama.com/?losc=100967＆tele=601＆cm_mmc=360A-_-cpc-_-sem-_-pc＆utm_source=360A＆utm_medium=sem＆utm_campaign=cpc＆fc=u236375852.c1573035198.g1204350607.k8249987607.a3970252336.pq">
+	                    <li id="_loginMobileButton" class="last"><a href="#" class="loing-btn" id="loginMobileButton">登  录</a></li>
+						<!-- 滑动验证 -->
+						<li id="_mobileGeetestCaptcha" style="display: none;">
+							
+							<p id="mobile-embed-captcha-wait" class="hide">正在加载验证码......</p>
+						</li>
+						<input type="hidden" id="mobile_geetest_challenge" name="mobile_geetest_challenge" value="">
+						<input type="hidden" id="mobile_geetest_validate" name="mobile_geetest_validate" value="">
+						<input type="hidden" id="mobile_geetest_seccode" name="mobile_geetest_seccode" value="">
+					</form>
+				</ul>
+				<span style="font-size:13px" class="check-box fl"><input name="remPassWord" type="checkbox" disabled="disabled" checked="" class="check" value="11">我已阅读并接受</span>
+				<a style="font-size:13px" href="javascript:void(0)" onclick="agreement(&#39;http://login.lvmama.com/nsso/register/agreement.do&#39;)" class="link">《驴妈妈旅游网会员服务条款》</a>
+				<p class="lv-member">快捷注册:可使用手机快捷登录功能，通过动态密码完成快捷注册并登录。</p>
+                 <!-- 合作网站账号登录-->
+				<div class="account-box">
+					<h4><span>合作网站账号登录</span></h4>
+					<div class="icon clearfix">
+						<a href="javascript:void(0)" class="qq" title="QQ"></a>
+						<a href="javascript:void(0)"  class="weix" title="微信"></a>
+						<a href="javascript:void(0)"  class="sina" title="新浪微博"></a>
+						<a href="javascript:void(0)"  class="alpay" title="支付宝"></a>
+					</div>
+					
+				</div>
+            <!-- 合作网站账号登录结束-->
+			</div>
+			<!-- 手机验证登录结束-->
+
+        </div>
+        
+    </div>
+   
+	
+	<ins id="ac_js86_mm_116517798_14426646_60700697" style="display: none;"></ins>
+    <ul class="login-main-box" style="display:block"><li><img src="images/dl-jf.jpg" height="520" width="1920"></li></ul>
+  
+</div>
+<!-- 主体结束-->
+<!-- 公共底部  --><!-- footer\ --><div class="wrap" style="clear: both;"><a class="public_ft" href="#" target="_blank"><ul class="public_ft_list"><li><i class="ft_ioc1"></i><strong>价格保证</strong>同类产品，保证低价</li><li><i class="ft_ioc2"></i><strong>退订保障</strong>因特殊情况影响出行，保证退订</li><li><i class="ft_ioc3"></i><strong>救援保障</strong>旅途中遇意外情况，保证援助</li><li><i class="ft_ioc4"></i><strong>7x24小时服务</strong>快速响应，全年无休</li></ul></a></div><!-- copyright\ --><div class="lv-footer clearfix wrap" style="margin:0 auto;">    <p class="footer-link">       <a href="http://www.lvmama.com/public/about_lvmama" rel="nofollow">关于我们</a> |        <a href="http://www.lvmama.com/public/lianxi_us" rel="nofollow">联系我们</a> |        <a href="http://www.lvmama.com/public/site_map">网站地图</a> |        <a href="http://hotels.lvmama.com/brand/">酒店品牌</a> |        <a href="http://hotels.lvmama.com/area/">酒店查询</a> |        <a href="http://www.lvmama.com/public/help" rel="nofollow">帮助中心</a> |        <a href="http://www.lvmama.com/public/links">友情链接</a> |        <a href="http://www.lvmama.com/public/jobs" rel="nofollow">诚聘英才</a> |    <a href="http://www.lvmama.com/public/zizhi_lvmama" rel="nofollow">旅游度假资质</a> |        <a href="http://www.lvmama.com/userCenter/user/transItfeedBack.do" rel="nofollow">意见反馈</a> |        <a rel="nofollow" href="http://www.lvmama.com/public/adwy">广告业务</a>    </p>    <p class="lv-copyright">Copyright © 2016 www.lvmama.com. 上海景域文化传播股份有限公司版权所有　<a href="http://www.miitbeian.gov.cn/" target="_blank" rel="nofollow">沪ICP备13011172号-3</a>　增值电信业务经营许可证编号：<a rel="nofollow" href="http://pic.lvmama.com/img/ICP.jpg" target="_blank">沪B2-20100030</a></p>   <div class="lv-safety">      <a class="safety2" target="_blank" rel="nofollow" title="经营性网站备案信息" href="http://www.miibeian.gov.cn/"></a>      <a class="safety3" target="_blank" rel="nofollow" title="网络110报警服务" href="http://www.cyberpolice.cn/"></a>      <a class="safety4" target="_blank" rel="nofollow" title="支付宝特约商家" href="https://www.alipay.com/aip/aip_validate_list.htm?trust_id=AIP0102495"></a>      <a class="safety5" target="_blank" rel="nofollow" title="AAA级信用企业" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1664396140"></a>      <a class="safety6" target="_blank" rel="nofollow" title="上海工商" href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20110930103539539"></a>      <a class="safety7" target="_blank" rel="nofollow" title="可信网站" href="https://ss.cnnic.cn/verifyseal.dll?sn=2010101800100002662&ct=df&pa=590007"></a>      <a class="safety8" target="_blank" rel="nofollow" title="诚信认证示范企业" href="https://credit.szfw.org/CX20160614015657160455.html" id="___szfw_logo___" hidefocus="false"></a>      <a class="safety9" target="_blank" rel="nofollow" title="网络社会征信网" href="http://www.zx110.org/"></a>      <a class="safety10" target="_blank" rel="nofollow" title="360网站安全检测" href="http://webscan.360.cn/"></a>      <a class="safety11" target="_blank" rel="nofollow" title="网监安全" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010702001030"></a>      <a class="safety13" target="_blank" rel="nofollow" title="举报中心" href="http://www.shjbzx.cn/"></a>   </div></div><!-- //footer --><!-- 公共底部结束  -->
+
+</body></html>
